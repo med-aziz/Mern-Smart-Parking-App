@@ -1,0 +1,158 @@
+.Register {
+  background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-repeat: repeat;
+  background-position: center;
+}
+ @media only screen and (max-height: 720px) {
+  body {
+    background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+  }
+}
+ @media only screen and (max-width: 500px) {
+  body {
+    background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+  }
+}
+
+.Register__container {
+  padding: 60px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+ @media only screen and (max-width: 500px) {
+  .Register__container {
+    padding: 20px;
+  }
+}
+ @media only screen and (max-width: 360px) {
+  .Register__container {
+    padding: 10px;
+  }
+}
+ @media only screen and (max-width: 280px) {
+  .Register__container {
+    padding: 10px;
+  }
+}
+
+.Register__container > img {
+  object-fit: contain;
+  height: 200px;
+}
+
+.Register__container > form > .formInputs > div {
+  display: flex;
+  flex-direction: row;
+}
+.Register__container > form > .formInputs > .singleitemchange {
+  justify-content: center;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+ @media (max-width: 800px) {
+  .Register__container > form > .formInputs > div {
+    flex-direction: column;
+  }
+}
+
+.Register__container > form > .formInputs > div > .iconsintegredtoinputs {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 300px;
+  height: 30px;
+  outline-width: 0;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+ @media only screen and (max-width: 280px) {
+  .Register__container > form > .formInputs > div > .iconsintegredtoinputs  {
+    width: 220px;
+  }
+}
+
+.Register__container
+  > form
+  > .formInputs
+  > div
+  > .iconsintegredtoinputs
+  > .MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
+}
+
+.Register__container
+  > form
+  > .formInputs
+  > div
+  > .iconsintegredtoinputs
+  > input {
+  outline-width: 0;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  height: 30px;
+  text-align: center;
+  margin: 5px;
+  width: 300px;
+}
+ @media only screen and (max-width: 280px) {
+  .Register__container
+  > form
+  > .formInputs
+  > div
+  > .iconsintegredtoinputs
+  > input  {
+    width: 220px;
+    font-size: 52%;
+  }
+}
+
+.Register__container > form > button {
+  padding: 22px;
+  border-radius: 30px;
+  height: 30px;
+  width: 230px;
+  margin-top: 20px;
+  text-transform: inherit !important;
+  background-color: #343a37 !important;
+  color: white;
+}
+ @media only screen and (max-width: 280px) {
+  .Register__container > form > button {
+    width: 180px;
+  }
+}
+
+.Register__container > form > button :hover {
+  font-weight: bolder;
+}
+
+.Register__container > .ConnectButton > button {
+  padding: 22px;
+  border-radius: 30px;
+  height: 30px;
+  width: 230px;
+  margin-top: 10px;
+   
+  text-transform: inherit !important;
+  background-color: #276e74 !important;
+  color: white;
+}
+ @media only screen and (max-width: 280px) {
+  .Register__container > .ConnectButton > button  {
+    width: 180px;
+  }
+}
+
+.Register__container > .ConnectButton > button :hover {
+  font-weight: bolder;
+}

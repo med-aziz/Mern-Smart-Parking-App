@@ -1,0 +1,84 @@
+.loginadmin {
+  background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-repeat: repeat;
+  background-position: center;
+}
+@media only screen and (max-height: 634px) {
+  body {
+    background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+  }
+}
+.loginadmin__container {
+  padding: 60px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.527);
+  color: black;
+  border-radius: 10px;
+  box-shadow: -1px 4px 20px -6px rgba(255, 255, 255, 0.178);
+  font-family: cursive;
+}
+.loginadmin__container > img {
+  object-fit: contain;
+  height: 200px;
+}
+.loginadmin__container > form > .formInputs > div {
+  display: flex;
+  flex-direction: column;
+}
+/* Responsive layout  */
+@media (max-width: 800px) {
+  .loginadmin__container > form > .formInputs > div {
+    flex-direction: column;
+  }
+}
+.loginadmin__container > form > .formInputs > div > .iconsintegredtoinputs {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 330px;
+  height: 30px;
+  outline-width: 0;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+.loginadmin__container
+  > form
+  > .formInputs
+  > div
+  > .iconsintegredtoinputs
+  > .MuiSvgIcon-root {
+  color: black;
+  padding: 10px;
+}
+.loginadmin__container
+  > form
+  > .formInputs
+  > div
+  > .iconsintegredtoinputs
+  > input {
+  outline-width: 0;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  height: 30px;
+  text-align: center;
+  margin: 5px;
+  width: 330px;
+}
+
+.loginadmin__container > form > button {
+  padding: 22px;
+  border-radius: 30px;
+  height: 30px;
+  width: 230px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-transform: inherit !important;
+  background-color: #276e74 !important;
+  color: white;
+}

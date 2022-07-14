@@ -1,0 +1,117 @@
+.background-home {
+  background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+  /* display: grid; */
+  height: 130vh;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  color:white;
+}
+@media only screen and (max-width: 912px) {
+  .background-home { 
+    height: 110vh;
+    display: grid;
+  }
+}
+/* @media only screen and (max-width: 1024px) {
+  .background-home { 
+    height: 90vh;
+  }
+} */
+.background-home::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -99;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.home-btn {
+  width: 13%;
+  height: 44px;
+  margin: auto;
+  display: block;
+  color: #fff;
+  background-color: #276e74;
+  border-color: #276e74;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  }
+@media only screen and (max-width: 280px) {
+  .home-btn { 
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .home-btn { 
+    width: 45%;
+  }
+}
+.main-table{
+  margin: auto;
+}
+.main-table >tr > td{
+  padding: 50px;
+}
+@media only screen and (max-width: 912px) {
+  .main-table >tr > td { 
+      padding: 20px;
+  }
+}
+.home-table{
+  border-spacing: 15px;
+}
+.home-table >tr > .for-userswithoutsubscription{
+  border: 2px solid white;
+  padding: 75px;
+}
+.home-table >tr > .for-userswithsubscription{
+border: 2px solid white;
+padding: 45px;
+}
+@media only screen and (max-width: 912px) {
+  .home-table >tr > .for-userswithsubscription{        
+      padding: 12px;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .home-table >tr > .for-userswithoutsubscription{        
+      padding: 45px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .home-table >tr > .for-userswithsubscription{        
+      padding: 5px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .home-table >tr > .for-userswithoutsubscription{        
+      padding: 28px;
+  }
+}
+.reserve-btn {
+  /* background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg"); */
+  background-position: right;
+  color: #18b3c1;
+  cursor: pointer; 
+  border: 3px solid #18b3c1;
+  font-weight: bold;
+  padding: 9px;
+  margin-top: 30px;
+}
+.reserve-btn:hover {
+  background-image:none;
+  border: 3px solid #276e74;
+  background-color: #276e74;
+  color: white;
+}
+@media only screen and (max-width: 280px) {
+  .reserve-btn {        
+      padding: 2px;
+      font-size: 10px;
+  }
+}

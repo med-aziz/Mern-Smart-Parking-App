@@ -1,0 +1,211 @@
+.backgound-reservation {
+  padding-top: 39px;
+  padding-bottom: 70px;
+  background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  
+}
+@media only screen and (max-width: 900px) {
+  .backgound-reservation { 
+      height: 100%;
+      width: 100%;
+  }
+}
+.backgound-reservation::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -99;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.make-reservation, .show-reservation{
+  background-color: black;
+  height:100%;
+  width: 500px;
+  margin: 30px;
+  padding: 50px;
+  box-shadow: 0 0 20px #276e74;
+  border: 3px solid #276e74;
+}
+@media (max-width: 820px) {
+  .make-reservation,.show-reservation{
+      padding: 30px;
+      height:100%;
+      width: 250px
+  }
+}
+@media (max-width: 360px) {
+  .make-reservation,.show-reservation{
+      padding: 30px;
+      height:100%;
+      width: 230px
+  }
+}
+@media (max-width: 280px) {
+  .make-reservation,.show-reservation{
+      padding: 5px;
+      height:100%;
+      width: 210px
+  }
+}
+.section{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .section{
+      flex-direction: column; 
+  }
+}
+.titles{
+  color: #dde2ed;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+.small-title{
+color: white;
+text-align: center;
+margin-bottom: 10px;
+font-size: 12px;
+font-family: 'Times New Roman', Times, serif;
+}
+.reserve-form-style{
+  margin: auto;
+  margin-left: 70px;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+@media (max-width: 1024px) {
+  .reserve-form-style {  
+    margin-left: 0px;
+  }
+}
+.reserve-form-style label {
+  margin: 0 0 3px 0;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+  color: #dde2ed;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+.reserve-form-style input[type="time"],
+.reserve-form-style input[type="date"],
+.reserve-form-style input[type="number"] {
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+border: 1px solid #bebebe;
+padding: 7px;
+margin-top: 10px;
+outline: none;
+height: 45px;
+width: 300px;
+margin-bottom: 5px;
+}
+@media (max-width: 820px) {
+  .reserve-form-style input[type="time"],
+  .reserve-form-style input[type="date"],
+  .reserve-form-style input[type="number"] {  
+    width: 215px;
+  }
+}
+@media (max-width: 360px) {
+  .reserve-form-style input[type="time"],
+  .reserve-form-style input[type="date"],
+  .reserve-form-style input[type="number"] {  
+    width: 200px;
+  }
+}
+@media (max-width: 280px) {
+  .reserve-form-style input[type="time"],
+  .reserve-form-style input[type="date"],
+  .reserve-form-style input[type="number"] {  
+    width: 180px;
+  }
+}
+.reserve-form-style input[type="time"]:focus,
+.reserve-form-style input[type="date"]:focus,
+.reserve-form-style input[type="number"]:focus {
+-moz-box-shadow: 0 0 8px #88d5e9;
+-webkit-box-shadow: 0 0 8px #88d5e9;
+box-shadow: 0 0 8px #88d5e9;
+border: 1px solid #88d5e9;
+}
+.reserve-form-style .required {
+  color: red;
+}
+.btn-reserve{
+  background: #276e74;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  display: block;
+}
+.show-reservation > .styled-table{
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 400px;
+  box-shadow: 0 0 20px #101522;
+  background-color: white;
+}
+@media only screen and (max-width: 1150px) {
+  .show-reservation > .styled-table {
+    width:45%;
+    font-size: 20%
+  }
+}
+/* @media only screen and (max-width: 280px) {
+  .show-reservation > .styled-table {
+    width: 10%;
+    font-size: 5%
+  }
+} */
+.show-reservation> .styled-table > thead > tr {
+  background-color: #276e74;
+  color: #ffffff;
+}
+.show-reservation > .styled-table > tbody > tr > th,
+.show-reservation > .styled-table > thead > tr > th {
+  padding: 12px 15px;
+  text-align: center;
+}
+@media only screen and (max-width: 360px) {
+  .show-reservation > .styled-table > tbody > tr > th,
+  .show-reservation > .styled-table > thead > tr > th {
+      padding: 5px 5px;
+      text-align: center;
+    }
+}
+
+.show-reservation > .styled-table > tbody > tr {
+  border-bottom: 1px solid #dddddd;
+}
+.show-reservation > .styled-table > tbody > tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.show-reservation> .styled-table > tbody > tr:last-of-type {
+  border-bottom: 2px solid #276e74;
+}
+
+.show-reservation > .styled-table > tbody > tr > td {
+  text-align: center;
+  color: black;
+  padding: 12px 15px;
+}

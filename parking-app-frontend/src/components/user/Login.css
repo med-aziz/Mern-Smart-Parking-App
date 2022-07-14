@@ -1,0 +1,143 @@
+.login {
+  background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-repeat: repeat;
+  background-position: center;
+}
+@media only screen and (max-height: 634px) {
+  body {
+    background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+  }
+}
+.login__container {
+  padding: 60px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+.login__container > img {
+  object-fit: contain;
+  height: 200px;
+}
+/*.loginG {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  padding: 10px;
+}
+.loginWithGoogle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+}
+.loginWithGoogle > img {
+  object-fit: contain;
+  height: 40px;
+  display: flex;
+}*/
+.login__container > form > .formInputs > div {
+  display: flex;
+  flex-direction: row;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .login__container > form > .formInputs > div {
+    flex-direction: column;
+  }
+}
+.login__container
+  > form
+  > .formInputs
+  > div
+  > .inputIntegratedWithErrMes
+  > .iconsintegredtoinputs {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 300px;
+  height: 30px;
+  outline-width: 0;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+.login__container
+  > form
+  > .formInputs
+  > div
+  > .inputIntegratedWithErrMes
+  > .iconsintegredtoinputs
+  > .MuiSvgIcon-root {
+  color: gray;
+  padding: 10px;
+}
+.login__container
+  > form
+  > .formInputs
+  > div
+  > .inputIntegratedWithErrMes
+  > .iconsintegredtoinputs
+  > input {
+  outline-width: 0;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  height: 30px;
+  text-align: center;
+  margin: 5px;
+  width: 300px;
+}
+.login__container > form > .formInputs > div > .inputIntegratedWithErrMes {
+  flex-direction: column;
+}
+
+.login__container > form > button {
+  padding: 22px;
+  border-radius: 30px;
+  height: 30px;
+  width: 230px;
+  margin-top: 20px;
+  text-transform: inherit !important;
+  background-color: #276e74 !important;
+  color: white;
+}
+
+.login__container > form > button :hover {
+  font-weight: bolder;
+}
+
+.login__container > .GoogleLogButton > button {
+  padding: 22px;
+  border-radius: 30px;
+  height: 30px;
+  width: 230px;
+  margin-top: 30px;
+  text-transform: inherit !important;
+  background-color: #12703e !important;
+  color: white;
+}
+
+.login__container > .GoogleLogButton > button :hover {
+  font-weight: bolder;
+}
+
+.login__container > .CreateAccountButton > button {
+  padding: 22px;
+  border-radius: 30px;
+  height: 30px;
+  width: 230px;
+  margin-top: 10px;
+  text-transform: inherit !important;
+  background-color: #343a37 !important;
+  color: white;
+}
+.login__container > .CreateAccountButton > button :hover {
+  font-weight: bolder;
+}

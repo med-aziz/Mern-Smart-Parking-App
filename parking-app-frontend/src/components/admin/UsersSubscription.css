@@ -1,0 +1,67 @@
+.addsubs-background {
+    display: grid;
+    place-items: center;
+    background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+    height: 86.7vh;
+    width: 100%;
+    backdrop-filter: blur(15px);
+  }
+  @media only screen and (max-width: 900px) {
+    .addsubs-background {
+      padding-bottom: 40px;
+      padding-top: 20px;
+      display: grid;
+      place-items: center;
+      background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+      height: 86vh;
+      width: 100%;
+      backdrop-filter: blur(5px);
+    }
+  }
+  .addsubs-background::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -99;
+    background-color: rgba(253, 253, 253, 0.436);
+  }
+  .addsubs{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(43, 22, 22, 0.817);
+  }
+  @media only screen and (max-width: 400px) {
+    .addsubs {
+      width: 270px;
+    }
+  }
+  .addsubs-header {
+    height: 30%;
+    background: #276e74;
+    color: white;
+    text-align: center;
+  }
+  .addsubs-header > p {
+    font-size: 20px;
+  }
+  .container {
+    padding: 20px 16px;
+    background-color: white;
+  }
+  .create-button {
+    background: #10a84a;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  

@@ -1,0 +1,153 @@
+.users-withwithout-subsc-background {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+  }
+   @media only screen and (max-width: 900px) {
+    .users-withwithout-subsc-background {
+      background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+      height: 100%;
+      width: 100%;
+      backdrop-filter: blur(5px);
+    }
+  }
+
+.users-withwithout-subsc-background::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -99;
+    background-color: rgba(253, 253, 253, 0.436);
+  }
+
+.users-withwithout-subsc-background > .styled-table {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 900px;
+    box-shadow: 0 0 20px #101522;
+    background-color: white;
+  }
+   @media only screen and (max-width: 900px) {
+    .users-withwithout-subsc-background > .styled-table {
+      width: 50%;
+    }
+  }
+   @media only screen and (max-width: 900px) {
+    .users-withwithout-subsc-background > .styled-table {
+      font-size: 80%;
+    }
+  }
+
+.users-withwithout-subsc-background> .styled-table > thead > tr {
+    background-color: #276e74;
+    color: #ffffff;
+  }
+
+.users-withwithout-subsc-background > .styled-table > tbody > tr > th,
+.users-withwithout-subsc-background > .styled-table > thead > tr > th {
+    padding: 12px 15px;
+    text-align: center;
+  }
+
+.users-withwithout-subsc-background > .styled-table > tbody > tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+.users-withwithout-subsc-background > .styled-table > tbody > tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+.users-withwithout-subsc-background> .styled-table > tbody > tr:last-of-type {
+    border-bottom: 2px solid #276e74;
+  }
+
+.users-withwithout-subsc-background > .styled-table > tbody > tr > td {
+    text-align: center;
+  }
+
+.btn-add{
+    background-color: #276e74;
+    border-radius: 20px;
+    padding: 13px;
+    font-weight: bold;
+    width: 120px;
+    margin: 10px;
+    color: white;
+    box-shadow: 0 0 20px rgba(250, 245, 245, 0.637);
+    border: none;
+    cursor: pointer;
+}
+  @media only screen and (max-width: 900px) {
+  .btn-add {
+    font-size: 79%;
+  }
+}
+.btn-add:hover{
+  background-color: #0467FB;
+}
+
+.btn-modify{
+  background-color: #276e74;
+  border-radius: 20px;
+  padding: 13px;
+  font-weight: bold;
+  width: 120px;
+  margin: 10px;
+  color: white;
+  box-shadow: 0 0 20px rgba(250, 245, 245, 0.637);
+  border: none;
+  cursor: pointer;
+}
+  @media only screen and (max-width: 900px) {
+  .btn-modify{
+    font-size: 79%;
+  }
+}
+.btn-modify:hover{
+  background-color: #0467FB;
+}
+
+.btn-delete{
+  background-color: #6c7b7c;
+  border-radius: 20px;
+  padding: 13px;
+  font-weight: bold;
+  width: 120px;
+  margin: 10px;
+  color: white;
+  box-shadow: 0 0 20px rgba(250, 245, 245, 0.637);
+  border: none;
+  cursor: pointer;
+}
+  @media only screen and (max-width: 900px) {
+  .btn-delete{
+    font-size: 79%;
+  }
+}
+.btn-delete:hover{
+  background-color: rgb(203, 14, 14);
+}
+
+  @media only screen and (max-width: 500px) {
+  .btn-add, .btn-delete, .btn-modify{
+    margin: 9px;
+    padding: 10px;
+    font-weight:normal;
+    width: 88px;
+}
+}
+  @media only screen and (max-width: 280px) {
+  .btn-add, .btn-delete, .btn-modify{
+    margin: 5px;
+    padding: 10px;
+    width: 90px;
+}
+}

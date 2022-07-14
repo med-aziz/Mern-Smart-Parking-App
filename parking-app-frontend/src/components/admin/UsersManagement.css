@@ -1,0 +1,83 @@
+.table-background {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+  }
+  @media only screen and (max-width: 900px) {
+    .table-background {
+      background-image: url("https://i.pinimg.com/originals/e3/68/8b/e3688b37f216a91b026d7f9dcd0b2951.jpg");
+      height: 100%;
+      width: 100%;
+      backdrop-filter: blur(5px);
+    }
+  }
+  .table-background::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -99;
+    background-color: rgba(1, 8, 32, 0.87);
+  }
+  
+  .table-background > .styled-table {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 900px;
+    box-shadow: 0 0 20px rgba(250, 245, 245, 0.637);
+    background-color: white;
+  }
+  @media only screen and (max-width: 900px) {
+    .table-background > .styled-table {
+      width: 50%;
+    }
+  }
+  .table-background > .styled-table > thead > tr {
+    background-color: #276e74;
+    color: #ffffff;
+  }
+  .table-background > .styled-table > tbody > tr > th,
+  .table-background > .styled-table > thead > tr > th {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  .table-background > .styled-table > tbody > tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  .table-background > .styled-table > tbody > tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  .table-background > .styled-table > tbody > tr:last-of-type {
+    border-bottom: 2px solid #276e74;
+  }
+  .table-background > .styled-table > tbody > tr > td {
+    text-align: center;
+  }
+  .PersonIcon > .MuiSvgIcon-root {
+    color: #276e74;
+    padding: 10px;
+  }
+  .PersonIcon > .MuiSvgIcon-root :hover {
+    fill: black;
+  }
+  .PersonRemoveIcon > .MuiSvgIcon-root {
+    color: red;
+    padding: 10px;
+  }
+  .PersonRemoveIcon > .MuiSvgIcon-root :hover {
+    color: rgb(182, 3, 3);
+  }
+  .AppBlockingIcon > .MuiSvgIcon-root {
+    color: black;
+    padding: 10px;
+  }
+  .AppBlockingIcon > .MuiSvgIcon-root :hover {
+    color: #276e74;
+  }
